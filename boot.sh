@@ -20,4 +20,14 @@ k3d-destroy() {
   k3d cluster delete a-lab
 }
 
+<<<<<<< HEAD
+=======
+istio-create() {
+  kubectl create ns istio-system --dry-run=true -o yaml | kubectl apply -f -
+  kubectl apply -f istio/manifest.yaml
+  #kustomize build certificates | kubectl apply -f -
+  #kustomize build istio-bells | kubectl apply -f - 
+}
+
+>>>>>>> 93d78b6 (Added new container with k9s plugin installed)
 $1

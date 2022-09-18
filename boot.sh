@@ -20,3 +20,4 @@ k3d-destroy() {
   k3d cluster delete a-lab
 }
 
+$1
